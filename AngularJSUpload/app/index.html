@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app-demo">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload Demo</title>    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="angularJS.js"></script>
+
+
+
+</head>
+<body ng-controller="DemoController">
+    <h2>File Upload Demo</h2>
+
+    <main>
+        <div class="container-x1">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Subir imagenes</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <li>
+                            <button>
+                                <input  type="file" id="file" name='file' ng-upimage="conectado($files)" ng-model="mi_imagen" />
+                                <span>
+                                    cargar imagen
+                                </span>
+                            </button>
+                        </li>
+                        
+                    </ul>
+                </div>         
+            </div>
+        </div>
+    </main>
+</body>
+</html>
